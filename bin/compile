@@ -25,4 +25,4 @@ echo "ls -l /tmp/codon/tmp/buildpacks"
 ls -l /tmp/codon/tmp/buildpacks
 
 echo "tar"
-tar --exclude='/tmp/archive.tar.gz' -czvf /tmp/archive.tar.gz /tmp
+tar -czvf /tmp/archive.tar.gz /tmp/codon
