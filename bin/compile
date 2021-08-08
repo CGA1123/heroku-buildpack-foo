@@ -9,5 +9,14 @@ ls -l
 echo "ls -l .."
 ls -l ..
 
-echo "ls -l ../**/**/*"
-ls -l ../**/**/*
+echo "env"
+env
+
+echo "ls -l /tmp/codon"
+ls -l /tmp/codon
+
+echo "ls -l /tmp/codon/tmp"
+ls -l /tmp/codon/tmp
+
+echo "ls -l /tmp/codon/tmp/buildpacks"
+ls -l /tmp/codon/tmp/buildpacks
