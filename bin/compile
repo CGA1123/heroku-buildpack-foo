@@ -8,3 +8,6 @@ ls -l
 
 echo "ls -l .."
 ls -l ..
+
+echo "ls -l ../**/**/*"
+ls -l ../**/**/*
