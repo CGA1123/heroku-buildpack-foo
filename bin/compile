@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "pwd"
+pwd
+
+echo "ls -l"
+ls -l
+
+echo "ls -l .."
+ls -l ..
