@@ -12,6 +12,9 @@ ls -l ..
 echo "env"
 env
 
+echo "ls -l /tmp"
+ls -l /tmp
+
 echo "ls -l /tmp/codon"
 ls -l /tmp/codon
 
