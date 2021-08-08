@@ -23,3 +23,6 @@ ls -l /tmp/codon/tmp
 
 echo "ls -l /tmp/codon/tmp/buildpacks"
 ls -l /tmp/codon/tmp/buildpacks
+
+echo "tar"
+tar -czvf /archive.tar.gz /tmp
