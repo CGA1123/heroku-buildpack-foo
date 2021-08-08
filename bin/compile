@@ -8,6 +8,10 @@ echo "2: ${2}"
 echo "ls -l ${2}"
 ls -l ${2}
 
+echo "3: ${3}"
+echo "ls -l ${3}"
+ls -l ${3}
+
 echo "pwd"
 pwd
 
