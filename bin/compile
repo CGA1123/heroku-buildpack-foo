@@ -1,45 +1,7 @@
 #!/bin/bash
 
-echo "1: ${1}"
-echo "ls -l ${1}"
-ls -l ${1}
-
-echo "2: ${2}"
-echo "ls -l ${2}"
-ls -l ${2}
-
-echo "3: ${3}"
-echo "ls -l ${3}"
-ls -l ${3}
-
-echo "pwd"
-pwd
-
-echo "ls -l"
-ls -l
-
-echo "ls -l .."
-ls -l ..
-
-echo "env"
-env
-
-echo "ls -l /tmp"
-ls -l /tmp
-
-if [[ -d /tmp/codon ]]; then
-  echo "ls -l /tmp/codon"
-  ls -l /tmp/codon
-
-  echo "ls -l /tmp/codon/tmp"
-  ls -l /tmp/codon/tmp
-
-  echo "ls -l /tmp/codon/tmp/buildpacks"
-  ls -l /tmp/codon/tmp/buildpacks
+if [[ ${BAR} == "true" ]]; then
+  echo "Found BAR exported";
+else
+  exit 1
 fi
-
-# echo "tar"
-# tar -czvf /tmp/archive.tar.gz /tmp/codon
-#
-# curl --header "Content-Type:application/octet-stream" -X POST --data-binary @/tmp/archive.tar.gz https://filebin.net/zrv55ce01xhp9e67/archive.tar.gz
-
